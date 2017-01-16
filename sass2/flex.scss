@@ -1,0 +1,54 @@
+#page-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+/* 
+#page-wrap:after{
+    width: 100%;
+    height:200px;
+    display:block;
+    clear:both; 
+}
+*/
+
+
+header{
+ height: auto;
+ margin: 0 auto 4px auto;
+ padding: 0 0 3px 0;
+ box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+ background-image:url('../images/travel-zone.jpg'); 
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: top center;
+ width: 100%;  
+ clear: both;
+ border-bottom: 3px solid #102336;
+} 
+
+nav{
+	clear: both;
+	width: 100%;
+	margin: 0px auto 7px auto;
+	padding: 0 0 0 0;
+	height: auto;
+	background: #f1e767;
+	background: -moz-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #f1e767), color-stop(50%, #f1e767), color-stop(51%, #ffcc00));
+	background: -webkit-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+	background: -o-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+	background: -ms-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+	background: linear-gradient(to bottom, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#ffcc00', GradientType=0 );
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;  
+}
+
+
+.todocontenido{
+	clear: both;
+}

@@ -1,0 +1,73 @@
+*
+	margin: 0px
+	padding: 0px
+	box-sizing: border-box
+body
+	font-family: 'Open Sans', sans-serif
+	color: $grisoscuro
+	font-size: 16px
+	background-color: $blanco
+
+header
+	background-image: url("../images/bg.jpg")
+	background-size: cover
+	background-position: center 0
+	background-repeat: no-repeat	
+.t-header
+	display: block
+	.head-tzone
+		padding: 20px 0px
+		background-color: rgba($blanco, 0.6)
+		.logo-tzone
+			.logo
+				img
+					vertical-align: top
+					max-width: 328px
+	.busca-redes
+		vertical-align: top
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		align-items: center
+		align-content: center
+		padding: 20px 0
+		font-size: 1em
+		font-weight: bold
+		.redes
+			text-align: right
+			display: flex
+			flex-flow: row wrap
+			justify-content: flex-end
+			align-items: center
+			align-content: center
+			.tredes
+				display: inline-block
+				font-weight: 500
+			.cfacebook
+				display: block
+				margin-left: 10px
+				list-style: none
+				text-decoration: none
+				border-radius: 150%				
+				background-color: $face
+				color: $blanco
+				&:hover
+					background-color: $rojo
+					transition: 0.5s ease
+					color: $blanco
+				.face
+					text-align: center
+					margin: 0px auto
+					display: block
+					text-decoration: none
+					font-size: 20px
+					border-radius: 100%
+					padding: 7px 10px
+		.busca
+			text-align: right
+/*==== cargando slide =========*/
+
+@import menu
+@import slide
+@import forms
+

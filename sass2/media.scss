@@ -1,0 +1,393 @@
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+/*============================= 1119 ======================*/
+@media only screen and (max-width: 1199px) {
+
+
+}
+
+/*============================= 1024 ======================*/
+@media only screen and (max-width: 1024px) {
+
+    
+  body {     min-width: 768px;    }
+
+  header {
+    width:100%;
+    height: auto;
+    padding-top: 0px;
+  }
+
+
+  nav ul {     display: block;   }
+  nav select {     display: none;    }
+
+}
+
+
+/* ------------------------------------ /* Media Queries  ------------------------------------ */
+
+/* Standard 960 or larger (browsers) */
+  
+@media only screen and (min-width: 960px) {  }
+@media only screen and (max-width: 979px) {  } 
+/* ---------------------------------------------------------------------- */
+
+/* Smaller than standard 960 (devices and browsers) */
+
+@media only screen and (max-width: 959px) {
+
+  #page-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+
+  
+  /* Tiny Nav */
+
+  .js .tinynav {    display: block; font-size: 18px;  margin:40px auto 0px auto;  text-align: center; }
+  .js .tinynav option{font-size: 14px;}
+
+  .tinynav1{  font-weight: bold; text-align: center;}
+
+  .js #navlist {     display: none;     }
+
+
+  .tinynav {
+    color: #010066;
+    width: 100%;
+    background: #f1e767;
+    background: -moz-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f1e767), color-stop(50%, #f1e767), color-stop(51%, #ffcc00));
+    background: -webkit-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+    background: -o-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+    background: -ms-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+    background: linear-gradient(to bottom, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#ffcc00', GradientType=0 );
+  }
+
+
+
+
+
+/*
+  clear: both;
+  max-width: 1024px;
+  margin: 0px auto 7px auto;
+  padding: 0 0 0 0;
+  height: 60px;
+background: #f1e767;
+background: -moz-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #f1e767), color-stop(50%, #f1e767), color-stop(51%, #ffcc00));
+background: -webkit-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+background: -o-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+background: -ms-linear-gradient(top, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+background: linear-gradient(to bottom, #f1e767 0%, #f1e767 50%, #ffcc00 51%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#ffcc00', GradientType=0 );
+
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; */
+
+
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {   }
+
+/* ---------------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .zerogrid{width:768px;}
+
+
+body{
+    clear: both;
+    font:normal 100%/1em 'Helvetica Neue','Helvetica','Arial',sans-serif!important;
+    color:#333;
+    background-color:#FFF;
+    padding:0px!important;
+    margin:0!important;
+    width: 100%;   
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: url(../images/fondo_central.png) 50% 50% no-repeat fixed;
+    background: url(../images/under.png) 0 0 repeat fixed, url(../images/fondo_central.png) 50% 50% no-repeat fixed, #000000;
+    background-size: auto, cover;  
+}
+
+.backgroundmsts{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#footer { background-color: #010133; }
+
+.cuadro-buscador{
+  width: auto;
+  height: 50px;
+  clear: both;
+  background-color: #fff;
+  float: none;
+  margin: 0px auto;
+  padding: 0px 10px 0px 11px;
+}
+
+.cuadro-redes{ 
+  display: inline-block;
+  float: left;
+}
+
+.buscador{
+  display: inline-block;
+}
+
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+
+@media only screen and (max-width: 767px) {     
+
+  #logo {
+
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  #logo a { display: inline-block;  }
+  .wpcf7-form input {     width: 80%;   }
+  .wpcf7-form textarea {   width: 90%;    }
+ 
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    min-width: 420px;
+  }
+
+
+  header{
+    width: 100%;
+  }
+
+  header, nav {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  nav ul {
+    display: none;
+  }
+  nav select {
+    display: block;
+  }
+  
+
+.cuadro-buscador{
+  width: auto;
+  height: 50px;
+  clear: both;
+  background-color: #ffcc00;
+  float: none;
+  margin: 0px auto;
+  padding: 0px 10px 0px 11px;
+}
+
+.buscador{
+  display: inline-block;
+  width: 55%;
+  float: left;
+}
+
+.cuadro-redes{ 
+  display: inline-block;
+  width: 35%;
+  margin-top: 4px;
+}
+
+.cuadro-buscador input[type=submit] { background-color: #fff; color: #010066; }
+
+
+ .zerogrid{width:100%;}
+
+  .zerogrid .col-1-5{
+    width:100%;
+    height: 100%;
+  }
+  
+  .zerogrid .col-2-3{width:100%;}
+  
+
+.zerogrid .mapeo{  width: 90%; margin: 0px; padding: 4px;  }  
+
+
+.iconos{  width: 90%; }
+
+
+.contenido-cartelera img{
+    width: 100%;
+    height: auto;    
+  }
+
+#footer {
+    background-color: #010133;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+}
+
+
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {   }
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {  .tinynav { width: 250px; }  }
+
+
+@media only screen and (min-width: 480px) and (max-width: 619px) {
+  
+  .zerogrid{width:100%;}
+  .zerogrid .col-2-3{width:100%;}
+  .zerogrid .mapeo{  width: 90%; margin: 0px; padding: 4px;  }  
+  .iconos{  width: 90%; }
+
+
+  .zerogrid .col-1-5{
+    width:100%;
+    height: 100%;
+  }
+
+
+  #footer {
+    background-color: #010133;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+
+}
+
+/*============================= 479 ======================*/
+
+
+@media only screen and (max-width: 479px) {
+   
+  body { min-width: 300px;  }
+  nav ul {   display: none;    }
+  nav select {     display: block;   }
+
+.cuadro-buscador{
+  width: auto;
+  height: 85px;
+  clear: both;
+  background-color: #ffcc00;
+  float: none;
+  margin: 0px auto;
+  padding: 0px 10px 0px 11px;
+}
+
+.buscador{
+  width: 100%;
+  clear: both;
+}
+
+.cuadro-redes{ 
+  width: 100%;
+  clear: both;
+}
+
+.divpagos{ width: 100%;}
+.cuadro-paquetes2{width: 100%;}
+
+#logo{  float: none;  }
+
+.contenido-cartelera img{
+  width: 100%;
+  height: auto;
+}
+
+  .zerogrid{ 
+    width: 100%; 
+    position: relative; 
+    margin: 0 auto; 
+    padding: 0px;
+  }
+
+  .contenido-cartelera .division-home{
+    clear: both;
+    margin-top: 6px;
+    border-bottom: 1px solid #102336;
+    height: 50px;
+
+  }
+
+  .zerogrid{    width:100%;   }
+  
+  .zerogrid .col-1-5{
+    width:100%;
+    height: 100%;   
+  } 
+
+  .zerogrid .col-2-3{    width:100%;   }
+
+.zerogrid .mapeo{  width: 90%; margin: 0px; padding: 4px;  }  
+
+
+.iconos{  width: 90%; }
+
+
+#footer {
+    background-color: #010133;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+ 
+
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {   body {  }  }
+
+/* For smartphones */
+@media (max-width: 480px) {     }
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {     }

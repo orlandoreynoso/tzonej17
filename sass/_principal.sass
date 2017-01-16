@@ -1,0 +1,925 @@
+#titulo_cuadro
+	h3
+		font-size: 1.1em
+		color: $blanco
+		font-family: 'Oswald', sans-serif
+		text-transform: uppercase
+
+#page-wrap
+	display: flex
+	flex-wrap: wrap
+	flex-direction: row
+	box-sizing: border-box
+
+.todocontenido
+	clear: both
+
+#titulo_cuadro
+	h3
+		font-size: 1.1em
+		color: $blanco
+		font-family: 'Oswald', sans-serif
+		text-transform: uppercase
+
+.backgroundmsts
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: 100%
+/*=============================================*/
+#content
+	min-height: 350px
+	background: #f7f7f7
+	padding: 5px
+
+h2
+	text-shadow: 1px 1px 4px #000000
+	color: #ffcc00
+	line-height: 1.8em
+	margin: 0px
+	padding: 0px
+
+h3
+	text-shadow: 1px 1px 4px #000000
+	color: #e80919
+	line-height: 1.8em
+	margin: 0px
+	padding: 0px
+
+h1
+	text-shadow: 1px 1px 4px #000033
+	color: #000033
+	line-height: 1.8em
+	font-size: 1.9em
+	margin: 0px
+	padding: 0px
+
+a
+	outline: none
+	transition: 0.5s ease
+	-o-transition: 0.5s ease
+	-webkit-transition: 0.5s ease
+	&:hover
+		color: #102336
+
+a
+	text-decoration: none
+	color: inherit
+	outline: none
+	transition: 0.5s ease
+	-o-transition: 0.5s ease
+	-webkit-transition: 0.5s ease
+	font-weight: bold
+
+
+a:hover, a:active
+	color: #9e2020
+
+
+
+strong
+	text-shadow: 1px 1px 4px #000033
+	color: #000033
+
+#descripcion_categoria
+	color: #9e2020
+	a
+		&:hover
+			color: #000033
+
+.addthis_toolbox
+	display: inline-block
+	margin: 0
+	padding: 0
+	background-color: #f4f4f4
+
+/*======================================*/
+.cuadro-redes
+	width: 40%
+	display: inline-block
+	padding: 0px 10px 0px 10px
+	p
+		display: inline-block
+		vertical-align: middle
+		font-family: 'Economica-Bold'
+		font-size: 19px
+	a
+		display: inline-block
+		vertical-align: middle
+		margin: 0px
+		padding: 0px
+		&.linkopacity
+			border: 2px solid $blanco
+			margin-left: 10px
+			background-image: url("../images/facebook_icon.png")
+			background-size: 100%
+			width: 37px
+			height: 37px
+			-webkit-border-radius: 6px
+			-moz-border-radius: 6px
+			border-radius: 6px
+		&.linkopacity
+			&:hover
+				background-image: url("../images/facebook_icon_hover.png")
+				-webkit-transition: all 0.35s ease
+				-moz-transition: all 0.35s ease
+				-ms-transition: all 0.35s ease
+				-o-transition: all 0.35s ease
+				transition: all 0.35s ease
+				background-color: #389baf
+				-webkit-border-radius: 6px
+				-moz-border-radius: 6px
+				border-radius: 6px
+
+
+
+.cuadro1
+	max-width: 1024px
+	height: 204px
+	margin: 0px auto
+	padding: 0px 0px 0px 0px
+	display: block
+
+/*=============== buscador =============================*/
+.cuadro-buscador
+	background-color: rgba(255, 255, 255, 0.3)
+	background: rgba(255, 255, 255, 0.3)
+	color: rgba(255, 255, 255, 0.3)
+	width: 50%
+	padding: 7px 0px 7px 0px
+	margin: 150px 0px 2px 0px
+	float: right
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	input[type=text]
+		width: 62%
+		padding: 7px 10px 4px 10px
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+		font-weight: 400
+		font-size: 14px
+		color: #9d9e9e
+		text-shadow: 1px 1px 0 white
+		background: $blanco
+		border: 1px solid $blanco
+		border-radius: 5px
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+		border-radius: 5px
+		float: left
+		display: inline-block
+	input[type=text]:focus
+		position: relative
+		bottom: -1px
+		background: #d9d9d9
+		box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		color: #003366
+	input[type=submit]:focus
+		position: relative
+		bottom: -1px
+		background: #56c2e1
+		box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	input[type=text]:hover
+		background: #d9d9d9
+		border: 1px solid rgba(255, 255, 255, 0.75)
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		color: #003366
+	input[type=submit]:hover
+		background: #f1e767
+		border: 1px solid rgba(255, 255, 255, 0.75)
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		color: #003366
+	input[type=submit]
+		padding: 4px 10px 4px 10px
+		font-family: 'Bree Serif', serif
+		font-weight: 300
+		font-size: 18px
+		color: $blanco
+		text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25)
+		background: #ffcc00
+		border: 1px solid #46b3d3
+		border-radius: 5px
+		cursor: pointer
+		box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+		-moz-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+		-webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+		display: inline-block
+		float: left
+		margin: 0px 0px 0px 4px
+
+.buscador
+	width: 54%
+	min-height: 30px
+	margin: 8px 0px 0px 4px
+	padding: 0px 6px 0px 0px
+	display: inline-block
+	float: left
+	list-style: none
+/*============*/
+.cuadro-redes
+	width: 30%
+	display: inline-block
+	padding: 0px 10px 0px 10px
+	float: right
+	text-align: right
+	a
+		display: inline-block
+		vertical-align: middle
+		margin: 0px
+		padding: 0px
+		&.linkopacity
+			border: 2px solid $blanco
+			margin-left: 10px
+			background-image: url("../images/facebook_icon.png")
+			background-size: 100%
+			width: 37px
+			height: 37px
+			-webkit-border-radius: 6px
+			-moz-border-radius: 6px
+			border-radius: 6px
+			&:hover
+				background-image: url("../images/facebook_icon_hover.png")
+				-webkit-transition: all 0.35s ease
+				-moz-transition: all 0.35s ease
+				-ms-transition: all 0.35s ease
+				-o-transition: all 0.35s ease
+				transition: all 0.35s ease
+				background-color: #f1e767
+				-webkit-border-radius: 6px
+				-moz-border-radius: 6px
+				border-radius: 6px
+	p
+		display: inline-block
+		vertical-align: middle
+		font-family: 'Economica-Bold'
+		font-size: 19px
+		color: #003366
+
+/*====== social media ===================*/
+#div102
+	clear: both
+	width: 100%
+	height: 220px
+	margin: 0px 0px 5px 0px
+	padding: 5px 4px 0px 5px
+	background: none
+
+.redes
+	.face_cocos
+		min-height: 450px
+		width: 100%
+		overflow: hidden
+	iframe
+		width: 100%
+		min-height: 380px
+		overflow: hidden
+
+/*======*/
+.cuadro-paquetes2-contenido
+	margin: 0px
+	padding: 7px
+	list-style: none
+	h2
+		font-family: 'Economica-Bold',sans-serif
+		color: #cc0000
+		font-size: 1.8em
+		clear: both
+		line-height: 1.3em
+		text-shadow: 1px 3px 10px #000033
+		padding: 4px
+	p
+		font-family: 'Economica-Bold',sans-serif
+		color: #000033
+		font-size: 1.5em
+		clear: both
+		line-height: 1.3em
+
+.cuadro-paquetes2
+	border: 1px solid #000033
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+	background: #eeeeee
+	background: url(data:image/svg+xml)
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc))
+	background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 )
+	display: inline-block
+	width: 98%
+	height: auto
+	margin: 0px auto 10px auto
+	padding: 0px 0px 20px 0px
+	overflow: hidden
+
+/*========= Formulario para suscripciones =====================*/
+.resume input[type=text]:hover, #home-suscribirse input[type=text]:hover, .cuadro-paquetes2-contenido input[type=text]:hover
+	background: #d9d9d9
+	border: 1px solid rgba(255, 255, 255, 0.75)
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	color: #003366
+
+.resume input[type=submit]:focus, #home-suscribirse input[type=submit]:focus, .cuadro-paquetes2-contenido input[type=submit]:focus
+	position: relative
+	bottom: -1px
+	background: #56c2e1
+	box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+
+.resume input[type=submit], #home-suscribirse input[type=submit], .cuadro-paquetes2-contenido input[type=submit]
+	padding: 4px 10px 4px 10px
+	margin: 7px 0px 7px 4px
+	font-family: 'Bree Serif', serif
+	font-weight: 300
+	font-size: 18px
+	color: $blanco
+	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25)
+	background: #ffcc00
+	border: 1px solid #46b3d3
+	border-radius: 5px
+	cursor: pointer
+	box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+	-moz-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+	-webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+	display: inline-block
+
+.resume input[type=text], #home-suscribirse input[type=text], .cuadro-paquetes2-contenido input[type=text]
+	width: 62%
+	padding: 7px 10px 4px 10px
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+	font-weight: 400
+	font-size: 14px
+	color: #9d9e9e
+	text-shadow: 1px 1px 0 white
+	background: $blanco
+	border: 1px solid $blanco
+	border-radius: 5px
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	float: left
+	display: inline-block
+
+.resume input[type=submit]:hover, #home-suscribirse input[type=submit]:hover, .cuadro-paquetes2-contenido input[type=submit]:hover
+	background: #f1e767
+	border: 1px solid rgba(255, 255, 255, 0.75)
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	color: #003366
+
+.resume input[type=text]:focus, #home-suscribirse input[type=text]:focus, .cuadro-paquetes2-contenido input[type=text]:focus
+	position: relative
+	bottom: -1px
+	background: #d9d9d9
+	box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	color: #003366
+
+/*=============================================================*/
+#home-suscribirse
+	form
+		display: block
+		margin: 15px 0px 0px 0px
+		padding: 0px 0px 0px 0px
+		#btn_home
+			color: #000033
+			width: 170px
+			height: 30px
+			display: block
+			margin: 10px 0px 0px 20px
+			padding: 0px 0px 0px 0px
+			border: none
+			background-color: #cccccc
+			font-family: 'Open Sans', sans-serif
+			font-style: normal
+			font-size: 18px
+			&:hover
+				color: #000000
+				text-decoration: underline
+
+.style2
+	background-image: url(../images/imgformvalue.png)
+	width: 157px
+	height: 27px
+	margin: 0px 0px 0px 20px
+	padding: 0px 0px 0px 15px
+	border: none
+	color: #666666
+	font-style: italic
+	font-family: 'Open Sans', sans-serif
+	font-size: 13px
+
+.cuadro-paquetes2
+	h1
+		-webkit-border-top-left-radius: 10px
+		-webkit-border-top-right-radius: 10px
+		-moz-border-radius-topleft: 10px
+		-moz-border-radius-topright: 10px
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		background-color: #cc0000
+		color: $blanco
+		max-height: 30px
+		text-align: center
+		font-size: 16px
+		margin: 0px
+		padding: 4px 0px 4px 0px
+
+/*======================*/
+.divpagos
+	border: 1px solid #000033
+	-webkit-border-radius: 10px
+	-moz-border-radius: 10px
+	border-radius: 10px
+	background: #eeeeee
+	background: url(data:image/svg+xml)
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc))
+	background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%)
+	background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 )
+	display: inline-block
+	width: 99%
+	height: auto
+	margin: 0px 0px 6px 0px
+	overflow: hidden
+	clear: both
+	h1
+		-webkit-border-top-left-radius: 10px
+		-webkit-border-top-right-radius: 10px
+		-moz-border-radius-topleft: 10px
+		-moz-border-radius-topright: 10px
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		background-color: #000033
+		color: $blanco
+		max-height: 30px
+		text-align: center
+		font-size: 16px
+		margin: 0px
+		padding: 4px 0px 4px 0px
+	.widget
+		list-style: none
+		a
+			.aligncenter
+				margin: 0px auto
+				text-align: center
+				display: block
+				border: 4px solid #dce7f2
+				&:hover
+					margin: 0px auto
+					text-align: center
+					display: block
+					border: 4px solid $blanco
+					-webkit-transition: all 0.35s ease
+					-moz-transition: all 0.35s ease
+					-ms-transition: all 0.35s ease
+					-o-transition: all 0.35s ease
+					transition: all 0.35s ease
+		img
+			margin: 0px auto
+			text-align: center
+	#divplan
+		display: block
+		width: 190px
+		height: 103px
+		margin: 15px 0px 0px 11px
+		padding: 0px 0px 0px 0px
+
+.divpagos-contenido
+	margin: 0px
+	padding: 8px
+	p
+		font-family: 'Economica-Bold',sans-serif
+		color: #000033
+		font-size: 1.5em
+		clear: both
+		line-height: 1.3em
+
+/*=========================== contenido cartelera ==============================*/
+.contenido-cartelera
+	min-height: 450px
+	padding-left: 10px
+	padding-right: 10px
+	line-height: 1.5em
+	padding-top: 15px
+	font-size: 1.2em
+	em
+		text-shadow: 1px 1px 4px #000033
+		line-height: 1.8em
+	img
+		max-width: 100%
+		height: auto
+	.aligncenter
+		margin: 20px auto 20px auto
+	.alignleft
+		float: left
+		margin: 20px 20px 20px 0px
+	li
+		list-style: none
+	p
+		font-size: 16px
+		display: block
+		line-height: 1.5em
+	#compartir
+		clear: both
+		right: 0
+		text-align: right
+		display: block
+		width: 300px
+		float: right
+		margin: 8px 0 10px 0
+		padding: 0 0 0 0
+		min-height: 20px
+
+.clearing
+	clear: both
+	margin: 1px
+	padding: 0px
+
+/*========= Formularios contenido cartelera ====================*/
+
+.contenido-cartelera input[type=text], .contenido-cartelera input[type=email], .contenido-cartelera input[type=date], .contenido-cartelera textarea
+	width: 62%
+	padding: 7px 10px 4px 10px
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+	font-weight: 400
+	font-size: 14px
+	color: #9d9e9e
+	text-shadow: 1px 1px 0 white
+	background: $blanco
+	border: 1px solid $blanco
+	border-radius: 5px
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+
+.contenido-cartelera input[type=text]:focus, .contenido-cartelera input[type=email]:focus, .contenido-cartelera input[type=date]:focus, .contenido-cartelera textarea:focus
+	position: relative
+	bottom: -1px
+	box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	color: #003366
+
+.contenido-cartelera
+	input[type=submit]:focus
+		position: relative
+		bottom: -1px
+		background: #56c2e1
+		box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	input[type=submit]:hover
+		background: #f1e767
+		border: 1px solid rgba(255, 255, 255, 0.75)
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		color: #000
+	input[type=submit]
+		width: 50%
+		padding: 4px 10px 4px 10px
+		font-family: 'Bree Serif', serif
+		font-weight: 300
+		font-size: 18px
+		color: #003366
+		text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25)
+		background: #ffcc00
+		border: 1px solid #ffcc00
+		border-radius: 5px
+		cursor: pointer
+		box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+		-moz-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+		-webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+
+/*==============================================================*/
+#block02
+	clear: both
+	margin: 10px auto 0 auto
+	padding: 0px
+	width: 100%
+	display: block
+	height: auto
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+
+.col-1-5
+	width: 32%
+	display: inline-block
+	margin: 0 4px 0 0
+	padding: 4px 0 0 0
+	float: right
+	white-space: normal
+	overflow: hidden
+
+.col-2-3
+	width: 65%
+	margin: 0 0 0 5px
+	padding: 0 0 0 0
+	display: inline-block
+	float: left
+	white-space: normal
+
+.titulo-cartelera
+	width: 100%
+	min-height: 25px
+	background-color: #000033
+	margin: 0 auto 0 auto
+	padding: 3px 0px 3px 0px
+	text-align: center
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	h2
+		font-family: 'Economica-Bold',sans-serif
+		font-size: 20px
+		margin-top: 6px
+		color: #fddd0f
+
+.mapeo
+	color: $blanco
+	text-align: left
+	background-color: #0f1b2b
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	margin: 4px 0 10px 0
+	padding: 3px 20px 3px 20px
+	a
+		color: #e74c3c
+		transition: 0.5s ease
+		-o-transition: 0.5s ease
+		-webkit-transition: 0.5s ease
+		&:hover
+			color: #008dd2
+
+/*================================================*/
+.iconos input[type=text], .iconos input[type=email], .iconos input[type=date], .iconos textarea
+	width: 62%
+	padding: 7px 10px 4px 10px
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+	font-weight: 400
+	font-size: 14px
+	color: #9d9e9e
+	text-shadow: 1px 1px 0 white
+	background: $blanco
+	border: 1px solid $blanco
+	border-radius: 5px
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+
+.iconos
+	width: 100%
+	min-height: 100px
+	background: $blanco
+	display: block
+	clear: both
+	margin: 8px auto 4px auto
+	padding: 6px 0px 6px 0px
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	input[type=submit]:hover
+		background: #f1e767
+		border: 1px solid rgba(255, 255, 255, 0.75)
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+		color: #000
+	input[type=submit]:focus
+		position: relative
+		bottom: -1px
+		background: #56c2e1
+		box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+		-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	.wpcf7
+		p
+			color: #003366
+			margin: 4px 0px 7px 0px
+			padding: 4px 0px 4px 0px
+	input[type=submit]
+		width: 50%
+		padding: 4px 10px 4px 10px
+		font-family: 'Bree Serif', serif
+		font-weight: 300
+		font-size: 18px
+		color: #003366
+		text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25)
+		background: #ffcc00
+		border: 1px solid #ffcc00
+		border-radius: 5px
+		cursor: pointer
+		box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+		-moz-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+		-webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75)
+
+.iconos .widget, .iconos .textwidget
+	list-style: none
+
+.iconos .textwidget .su-tabs-nav, .iconos .textwidget .su-tabs-nav
+	margin: 0px 0px 0px 0px
+	padding: 0px
+	-webkit-transition: color 0.25s ease-out
+	-moz-transition: color 0.25s ease-out
+	-ms-transition: color 0.25s ease-out
+	-o-transition: color 0.25s ease-out
+	transition: color 0.25s ease-out
+	font-family: 'Oswald', sans-serif
+	color: #003366
+	text-shadow: 1px 0px 1px #003366
+	font-size: 1.166em
+	text-transform: uppercase
+	font-weight: 600
+	line-height: normal
+	background-color: #ffcc00
+
+.iconos input[type=text]:focus, .iconos input[type=email]:focus, .iconos input[type=date]:focus, .iconos textarea:focus
+	position: relative
+	bottom: -1px
+	box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	-webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75)
+	color: #003366
+
+/*================================================*/
+.banner
+	width: 100%
+	margin: 0px auto 10px auto
+	background-color: $blanco
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+	text-align: center
+	height: auto
+	background-color: $blanco
+	padding-bottom: 30px
+	li
+		margin: 0px
+		padding: 0px
+		list-style: none
+
+.lateral
+	background-color: #f7f7f7
+	margin: 0 0 16px 0
+	padding: 3px 9px 3px 9px
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+
+.wrap-content
+	-webkit-border-bottom-right-radius: 10px
+	-webkit-border-bottom-left-radius: 10px
+	-moz-border-radius-bottomright: 10px
+	-moz-border-radius-bottomleft: 10px
+	border-bottom-right-radius: 10px
+	border-bottom-left-radius: 10px
+
+/*== footer ===========*/
+#totop
+	display: none
+	text-decoration: none
+	position: fixed
+	bottom: 40px
+	margin-left: 640px
+	overflow: hidden
+	width: 43px
+	height: 28px
+	border: none
+	text-indent: -999px
+	z-index: 20
+	background: url("../images/totop.png") no-repeat left 0
+	transition: 0s ease
+	-o-transition: 0s ease
+	-webkit-transition: 0s ease
+	&:hover
+		outline: none
+		background-position: right 0
+
+#pie
+	background-color: #e74c3c
+	min-height: 150px
+	.group
+		padding: 50px
+		text-align: center
+		color: $blanco
+		line-height: 1.5em
+		font-family: 'Economica-Bold'
+		text-shadow: 1px 2px 1px #000
+		font-size: 1.2em
+		a
+			color: #ffcc00
+			&:hover
+				color: #f2f2f2
+				transition: 0.5s ease
+				-o-transition: 0.5s ease
+				-webkit-transition: 0.5s ease
+
+footer
+	width: 100%
+	background-color: #e74c3c
+
+/*==================laterales================*/
+#iz
+	#entradas
+		#titulo_entradas
+			background-color: #ffcc00
+			padding: 24px 0px 17px 25px
+			box-sizing: border-box
+			h3
+				font-size: 1.1em
+				color: $blanco
+				font-family: 'Oswald', sans-serif
+				text-transform: uppercase
+				text-align: center
+
+.lateral
+	.thumb
+		width: 20%
+		img
+			height: auto
+			display: inline-block
+			float: left
+			margin-right: 7px
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+			-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+			-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
+			border: 2px solid $blanco
+			width: 90%
+			&:hover
+				filter: alpha(opacity=50)
+				-moz-opacity: 1.0
+				opacity: 0.5
+				-khml-opacity: 1.0
+				transition: 0.5s ease
+				-o-transition: 0.5s ease
+				-webkit-transition: 0.5s ease
+				box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+				-webkit-box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+				-moz-box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+	.bla
+		.title
+			&:first-letter
+				text-transform: uppercase
+	.title
+		color: #000033
+		line-height: 1.3em
+		font-size: 1.1em
+		text-decoration: none
+		width: 78%
+		&:hover
+			color: #e74c3c
+			transition: 0.5s ease
+			-o-transition: 0.5s ease
+			-webkit-transition: 0.5s ease
+	.list
+		padding: 5px
+		margin-bottom: 5px
+		padding-bottom: 9px
+		overflow: hidden
+		border-bottom: 1px solid #ffcc00
+		text-transform: lowercase
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		align-items: center
+		box-sizing: border-box
+		a
+			&:first-letter
+				text-transform: uppercase
+

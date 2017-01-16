@@ -1,0 +1,6 @@
+[03-Aug-2016 01:38:39 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/viaje/public_html/wp-content/themes/Julio2016/functions.php on line 3
+[06-Aug-2016 08:16:48 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/viaje/public_html/wp-content/themes/Julio2016/functions.php on line 3
+[06-Aug-2016 08:31:01 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/viaje/public_html/wp-content/themes/Julio2016/functions.php on line 3
+[07-Aug-2016 13:38:50 America/Chicago] PHP Fatal error:  Call to undefined function language_attributes() in /home/viaje/public_html/wp-content/themes/Julio2016/header.php on line 3
+[07-Aug-2016 13:38:51 America/Chicago] PHP Fatal error:  Call to undefined function wp_footer() in /home/viaje/public_html/wp-content/themes/Julio2016/footer.php on line 24
+[10-Aug-2016 14:26:51 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/viaje/public_html/wp-content/themes/Julio2016/functions.php on line 3
