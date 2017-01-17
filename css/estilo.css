@@ -162,6 +162,7 @@ nav {
 
 input[type="text"],
 input[type="tel"],
+input[type="number"],
 input[type="email"] {
   box-sizing: border-box;
   padding: 7px 10px;
@@ -200,6 +201,11 @@ button[type="submit"] {
   button[type="submit"]:hover {
     color: #212121; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  color: #ff5252;
+  font-weight: 600; }
+
 .services-one {
   margin: 10px auto 0px auto;
   padding: 0px;
@@ -217,7 +223,7 @@ button[type="submit"] {
 
 .coti {
   box-sizing: border-box;
-  padding: 0px;
+  padding: 10px 0px 10px 0px;
   margin: 0px;
   font-size: 0.9em;
   list-style: none;
@@ -238,21 +244,22 @@ button[type="submit"] {
     flex-flow: row wrap;
     box-sizing: border-box; }
     .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field {
+      margin: 0;
       padding: 5px; }
-      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(1), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(2), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(3), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(4) {
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(1), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(2), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(3), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(4), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(5), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(6), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(7), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(8) {
         padding: 10px;
         width: 25%; }
-      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(5), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(6) {
-        padding: 10px;
-        width: 50%; }
-      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(7) {
+        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(1):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(1):outer-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(2):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(2):outer-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(3):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(3):outer-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(4):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(4):outer-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(5):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(5):outer-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(6):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(6):outer-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(7):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(7):outer-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(8):inner-spin-button, .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(8):outer-spin-button {
+          webkit-appearance: none;
+          margin: 0px; }
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(9) {
         width: 100%; }
-        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(7) textarea {
+        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(9) textarea {
           max-height: 72px;
           min-height: 72px;
           max-width: 100%;
           min-width: 100%; }
-      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(8) input[type="button"] {
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(10) input[type="button"] {
         background-color: #ff5252;
         padding: 20px;
         cursor: pointer;
@@ -261,7 +268,7 @@ button[type="submit"] {
         max-width: 200px;
         min-width: 200px;
         display: block; }
-        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(8) input[type="button"]:hover {
+        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(10) input[type="button"]:hover {
           background-color: #212121;
           border: 1px solid #ff5252;
           transition: 0.5s ease; }

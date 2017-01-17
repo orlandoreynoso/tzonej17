@@ -1,5 +1,6 @@
 input[type="text"],
 input[type="tel"],
+input[type="number"],
 input[type="email"]
 	box-sizing: border-box
 	padding: 7px 10px
@@ -33,3 +34,8 @@ button[type="submit"]
 	cursor: pointer
 	&:hover
 		color: $grisoscuro
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+	color: $rojo
+	font-weight: 600
+
