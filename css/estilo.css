@@ -19,11 +19,32 @@ header {
 .t-header {
   display: block; }
   .t-header .head-tzone {
-    padding: 20px 0px;
+    padding: 10px 0px;
     background-color: rgba(255, 255, 255, 0.6); }
-    .t-header .head-tzone .logo-tzone .logo img {
-      vertical-align: top;
-      max-width: 328px; }
+    .t-header .head-tzone .logo-tzone .logo {
+      display: block;
+      width: 250px;
+      height: 72px;
+      background-image: url("../images/logo.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      transition: 0.5s ease; }
+      .t-header .head-tzone .logo-tzone .logo:hover {
+        background-image: url("../images/logow.png");
+        transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        -webkit-transition: 0.5s ease; }
+      .t-header .head-tzone .logo-tzone .logo img {
+        vertical-align: top;
+        max-height: 70px; }
+        .t-header .head-tzone .logo-tzone .logo img:hover {
+          transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+          -webkit-transition: 0.5s ease;
+          filter: alpha(opacity=50);
+          -moz-opacity: 1;
+          opacity: 0.5;
+          -khml-opacity: 1; }
   .t-header .busca-redes {
     vertical-align: top;
     display: flex;
@@ -31,19 +52,36 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 1em;
     font-weight: bold; }
     .t-header .busca-redes .redes {
-      text-align: right;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      align-items: center;
-      align-content: center; }
+      text-align: right; }
       .t-header .busca-redes .redes .tredes {
         display: inline-block;
         font-weight: 500; }
+        .t-header .busca-redes .redes .tredes .t-cin {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          box-sizing: border-box;
+          width: 100%;
+          color: #212121;
+          font-weight: 600; }
+          .t-header .busca-redes .redes .tredes .t-cin:hover {
+            text-decoration: none; }
+          .t-header .busca-redes .redes .tredes .t-cin .t-c {
+            width: 100%; }
+          .t-header .busca-redes .redes .tredes .t-cin .t-n {
+            width: 100%;
+            display: block; }
+            .t-header .busca-redes .redes .tredes .t-cin .t-n:hover {
+              color: #ff5252; }
+            .t-header .busca-redes .redes .tredes .t-cin .t-n .t-i {
+              margin-right: 10px;
+              color: #ff5252; }
       .t-header .busca-redes .redes .cfacebook {
         display: block;
         margin-left: 10px;
@@ -104,7 +142,8 @@ nav {
   margin: 0px auto;
   padding: 0px;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #ffffff; }
   .slide .metaslider {
     box-sizing: border-box;
     margin: 0px auto;
@@ -122,6 +161,7 @@ nav {
     vertical-align: top; }
 
 input[type="text"],
+input[type="tel"],
 input[type="email"] {
   box-sizing: border-box;
   padding: 7px 10px;
@@ -143,7 +183,9 @@ textarea {
   font-weight: 300; }
 
 input[type="submit"],
+input[type="button"],
 button[type="submit"] {
+  box-sizing: border-box;
   box-sizing: border-box;
   padding: 7px 10px;
   color: #ff5252;
@@ -154,8 +196,82 @@ button[type="submit"] {
   font-weight: 300;
   cursor: pointer; }
   input[type="submit"]:hover,
+  input[type="button"]:hover,
   button[type="submit"]:hover {
     color: #212121; }
+
+.services-one {
+  margin: 10px auto 0px auto;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #333333;
+  border-bottom: 1px solid #ff5252; }
+  .services-one .container {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box; }
+    .services-one .container .row {
+      margin: 0px auto;
+      padding: 0px;
+      box-sizing: border-box; }
+
+.coti {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.9em;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #333333;
+  color: #ffffff; }
+  .coti .nf-form-cont .nf-form-title {
+    padding: 0px;
+    margin: 0px auto; }
+    .coti .nf-form-cont .nf-form-title h3 {
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+      background-color: #ff5252; }
+  .coti .nf-form-layout .nf-form-content nf-fields-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box; }
+    .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field {
+      padding: 5px; }
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(1), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(2), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(3), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(4) {
+        padding: 10px;
+        width: 25%; }
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(5), .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(6) {
+        padding: 10px;
+        width: 50%; }
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(7) {
+        width: 100%; }
+        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(7) textarea {
+          max-height: 72px;
+          min-height: 72px;
+          max-width: 100%;
+          min-width: 100%; }
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(8) input[type="button"] {
+        background-color: #ff5252;
+        padding: 20px;
+        cursor: pointer;
+        color: #ffffff;
+        border: 1px solid #ff5252;
+        max-width: 200px;
+        min-width: 200px;
+        display: block; }
+        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(8) input[type="button"]:hover {
+          background-color: #212121;
+          border: 1px solid #ff5252;
+          transition: 0.5s ease; }
+      .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field .nf-after-field nf-section .nf-error-wrap {
+        background-color: #333333;
+        padding: 3px 10px 3px 10px;
+        border-radius: 4px;
+        color: #fbc02d; }
+        .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field .nf-after-field nf-section .nf-error-wrap .nf-error-msg {
+          color: #fbc02d; }
 
 @media only screen and (max-width: 1024px) {
   body {

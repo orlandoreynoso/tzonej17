@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: TravelZone
+Template Name: PortadaTravelZone
  */
 
  get_header();
@@ -18,6 +18,19 @@ Template Name: TravelZone
     </div>
 </div>
 
+<section class="services-one">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      	<div class="coti">
+        <?php //  dynamic_sidebar('acordion');  ?>
+        <?php  dynamic_sidebar('cotizar');  ?>      		
+      	</div>
+      </div>
+    </div>
+  </div>  
+</section>
+
  <section>
    <div class="container">
      <div class="row">
@@ -28,16 +41,6 @@ Template Name: TravelZone
    </div>
  </section> 
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <?php //  dynamic_sidebar('acordion');  ?>
-        <?php  dynamic_sidebar('cotizar');  ?>        
-      </div>
-    </div>
-  </div>  
-</section>
 
 
 

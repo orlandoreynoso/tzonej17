@@ -61,7 +61,7 @@ add_action('widgets_init' ,'apk_register_sidebars');
 
     if ( function_exists('register_sidebar') ) {
         register_sidebar(array(
-        'name' => 'cotizar',
+        'name' => 'Seleccionar Destino',
         'id' => 'cotizar'
         ));
     }

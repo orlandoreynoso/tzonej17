@@ -16,13 +16,33 @@ header
 .t-header
 	display: block
 	.head-tzone
-		padding: 20px 0px
+		padding: 10px 0px
 		background-color: rgba($blanco, 0.6)
 		.logo-tzone
 			.logo
+				display: block
+				width: 250px
+				height: 72px
+				background-image: url("../images/logo.png")
+				background-repeat: no-repeat
+				background-size: 100%
+				transition: 0.5s ease				
+				&:hover
+					background-image: url("../images/logow.png")
+					transition: 0.5s ease
+					-o-transition: 0.5s ease
+					-webkit-transition: 0.5s ease
 				img
 					vertical-align: top
-					max-width: 328px
+					max-height: 70px
+					&:hover
+						transition: 0.5s ease
+						-o-transition: 0.5s ease
+						-webkit-transition: 0.5s ease
+						filter: alpha(opacity=50)
+						-moz-opacity: 1.0
+						opacity: 0.5
+						-khml-opacity: 1.0
 	.busca-redes
 		vertical-align: top
 		display: flex
@@ -30,19 +50,37 @@ header
 		justify-content: center
 		align-items: center
 		align-content: center
-		padding: 20px 0
+		padding: 10px 0
 		font-size: 1em
 		font-weight: bold
 		.redes
 			text-align: right
-			display: flex
-			flex-flow: row wrap
-			justify-content: flex-end
-			align-items: center
-			align-content: center
 			.tredes
 				display: inline-block
 				font-weight: 500
+				.t-cin
+					display: flex
+					flex-flow: column wrap
+					justify-content: center
+					align-items:center
+					align-content: center
+					text-align: center
+					box-sizing: border-box
+					width: 100%
+					color: $grisoscuro
+					font-weight: 600
+					&:hover
+						text-decoration: none
+					.t-c
+						width: 100%
+					.t-n
+						width: 100%
+						display: block
+						&:hover
+							color: $rojo				
+						.t-i
+							margin-right: 10px
+							color: $rojo
 			.cfacebook
 				display: block
 				margin-left: 10px
