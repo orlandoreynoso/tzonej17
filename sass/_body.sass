@@ -250,7 +250,8 @@
 					.face
 						margin: 0px auto
 						text-align: center
-.contenido-portada
+.contenido-portada,
+.contenido-general
 	.widget
 		list-style: none
 	hr
@@ -269,7 +270,7 @@
 		margin: 10px
 	.size-full
 		max-width: 100%
-		margin: 10px
+		margin: 10px 0px
 	.alignleft
 		float: left
 		margin-top: 20px
@@ -283,3 +284,56 @@
 
 /*==================================*/
 
+.contenido-home
+	.container
+		.row
+			.contenido-general
+				padding: 20px
+				input[type="submit"]
+					background-color: $rojo
+					color: $blanco
+					padding: 10px 20px
+					&:hover
+						background-color: $oro
+						color: $azul
+						transition: 0.5s ease
+				hr
+					color: $azul
+				&:nth-child(2)
+					padding: 50px
+					color: $rojo
+				h1
+					color: $azul2
+				h2
+					color: $rojo
+				h3
+					color: $oro
+			.conten
+				.mapeo
+					padding: 10px 0px
+				.contenido
+					border-bottom: 1px solid rgba($grisoscuro, 0.4)
+					margin-bottom: 10px
+					padding-bottom: 10px
+					.title
+						font-size: 1.5em
+						font-family: 'Oswald', sans-serif
+					.descripcion_categoria
+						font-family: 'Oswald', sans-serif					
+						font-size: 0.9em
+						float: right
+						color: $azul
+						.icon-file
+							margin-right: 5px
+							color: $rojo
+					.fecha
+						font-family: 'Oswald', sans-serif					
+						font-size: 0.9em
+						color: $azul
+						.icon-date
+							margin-right: 5px
+							color: $rojo2
+					.thumb
+						padding: 5px
+					.info
+						padding: 5px 10px 10px 10px

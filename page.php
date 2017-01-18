@@ -11,7 +11,8 @@ Template Post Type: post, page, product
  <section class="contenido-home">
    <div class="container">
      <div class="row">
-         <div class="col-xs-12 col-md-8 contenido-portada">        
+         <div class="col-xs-12 col-md-8 contenido-general">
+          <div>
              <!-- h1><?php the_title(); ?></h1 -->
              <?php
               while ( have_posts() ) : the_post();
@@ -19,6 +20,7 @@ Template Post Type: post, page, product
               the_content();           
               endwhile;
             ?>
+            </div>
          </div>
         <div class="col-xs-12 col-md-4 contenido-laterales">
           <div class="suscription">

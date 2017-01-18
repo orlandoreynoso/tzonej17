@@ -29,7 +29,7 @@ get_header();
 
 
     									
-<?php // echo 'Esto es el index'; ?>
+<?php echo 'Esto es el index'; ?>
 
 
 						<div class="clearing"></div>
