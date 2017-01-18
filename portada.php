@@ -31,55 +31,35 @@ Template Name: PortadaTravelZone
   </div>  
 </section>
 
- <section>
+ <section class="contenido-home">
    <div class="container">
      <div class="row">
-       <div class="col-md-12">
+       <div class="col-md-12 contenido-portada">        
          <?php include (TEMPLATEPATH . '/libs/contenido-home.php');  ?>
        </div>
      </div>
    </div>
  </section> 
 
-
-
-
-<section id="content">  <!--- BEGING THE PRINCIPAL SECTION OF ALL CONTENT -->
-
-  <div class="wrap-content zerogrid">
-
-       <!-- INICIA DIV DE LOGO Y YOUTUBE  -->
-      <div style="clear: both"></div>  
-
-      <div style="clear: both"></div>  
-
-<section id="block02">
-<div style="clear: both"></div>
-<div class="col-2-3">
- <div class="mapeo">
-      <!-- Breadcrumb -->
-      <?php the_breadcrumb(); ?>
-      <!-- Fin Breadcrumb -->
- </div> 
-
-  <!-- div class="titulo-cartelera"><h2>Actualidad</h2></div -->
-
-
-</div>
-
-<div class="col-1-5">
-  <?php  include (TEMPLATEPATH . '/libs/lateral-home.php');  ?>
-</div>     
-
-
-      <div style="clear: both"></div>
-</section>  <!-- ENDED THE PRINCIPAL SECTION OF THE CONTENT  -->
+<section class="secciones">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <P>Recibe ofertas, promociones y mucho más.</P>
+        <?php    dynamic_sidebar('suscripcion');        ?>    
+        <h1>OPCIONES DE PAGO</h1>
+        <div class="divpagos-contenido  "><?php   dynamic_sidebar('opciones-de-pago'); ?></div>  
+      </div>
+      <div class="col-md-6">
+        <?php ultimas_paginas();  ?>
+        <iframe class="face_cocos"  src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FTravel-Zone%2F122124437856110&amp;width=440&amp;colorscheme=light&amp;show_faces=false&amp;stream=true&amp;header=false&amp;height=395" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:440px; height:395px;" allowTransparency="true"></iframe>                                  
+      </div>
+    </div>
+  </div>
   
+</section>
+
 
 <?php 
-
-/*   if (is_page(7)) {*/
-     get_footer();
-/*   }*/
-
+  get_footer();
 ?>

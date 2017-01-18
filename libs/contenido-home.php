@@ -1,8 +1,5 @@
 
 
-<div class="clearing"></div>
-
-
   <?php
   // Start the loop.
   while ( have_posts() ) : the_post();
@@ -21,8 +18,3 @@
 
  <?php  the_content(); ?> 
 
-<div class="clearing"></div>
- <div class="division-home"><p>&nbsp;</p></div>        
-
-
-<div class="clearing"></div>
