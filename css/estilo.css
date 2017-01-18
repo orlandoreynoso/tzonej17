@@ -492,6 +492,24 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none;
     background-position: right 0; }
 
+footer {
+  background: #ff5252;
+  padding: 25px 20px 40px 20px;
+  text-align: center; }
+  footer .address {
+    color: #ffffff; }
+    footer .address p {
+      padding: 0px;
+      margin: 7px 0px; }
+  footer .developer {
+    color: #ffffff; }
+    footer .developer a {
+      color: #fbc02d; }
+      footer .developer a:hover {
+        color: #28303d;
+        transition: 0.5s ease;
+        text-decoration: none; }
+
 @media only screen and (max-width: 1024px) {
   body {
     width: 100%; }

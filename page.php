@@ -1,51 +1,46 @@
 <?php 
 /*
-Template Name: Interior-general
+Template Name: Interiores
+Template Post Type: post, page, product
  */
+
  get_header();
 ?>
-<section id="content">  <!--- BEGING THE PRINCIPAL SECTION OF ALL CONTENT -->
-  <div class="wrap-content zerogrid">
-<section id="block02">
-    <div class="col-2-3">
-     <div class="mapeo">
-          <!-- Breadcrumb -->
-          <?php the_breadcrumb(); ?>
-          <!-- Fin Breadcrumb -->
-     </div> 
-      <!-- div class="titulo-cartelera"><h2>Actualidad</h2></div -->
-    <div class="contenido-cartelera">
-      <?php // echo 'EN PAGE PAGE PAGE PAGE'; ?>
-        <div class="clearing"></div>
-          <?php
-          // Start the loop.
-          while ( have_posts() ) : the_post();
-            // Include the page content template.
-            get_template_part( 'content', 'page' );
-            // If comments are open or we have at least one comment, load up the comment template.
-            if ( comments_open() || get_comments_number() ) :
-              comments_template();
-            endif;
-          // End the loop.
-          endwhile;
-          ?>
-         <?php  the_content(); ?> 
-        <div class="clearing"></div>
-         <div class="division-home"><p>&nbsp;</p></div>        
-        <div class="clearing"></div>
-    </div>
-    </div>
-     <div class="col-1-5">
-      <?php include (TEMPLATEPATH . '/libs/lateral-home.php');  ?>       
-      </div>     
-</section>
-</div>
-<div style="clear: both; "></div>
-</section>
+
+
+ <section class="contenido-home">
+   <div class="container">
+     <div class="row">
+         <div class="col-xs-12 col-md-8 contenido-portada">        
+             <!-- h1><?php the_title(); ?></h1 -->
+             <?php
+              while ( have_posts() ) : the_post();
+              // get_template_part( 'content', 'page' );
+              the_content();           
+              endwhile;
+            ?>
+         </div>
+        <div class="col-xs-12 col-md-4 contenido-laterales">
+          <div class="suscription">
+            <h3>Recibe ofertas, promociones y mucho más.</h3>
+            <?php dynamic_sidebar('suscripcion'); ?>
+          </div>
+          <div class="payoptions">
+            <h3>Opciones de Pago</h3>
+            <div class="divpagos-contenido  "><?php   dynamic_sidebar('opciones-de-pago'); ?></div>            
+          </div>
+          <div class="lastnews">
+            <h3>Últimas actualizaciones</h3>
+            <?php ultimas_paginas();  ?>            
+          </div>
+          <div class="facetravel">
+            <iframe class="face"  src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FTravel-Zone%2F122124437856110&amp;width=300&amp;colorscheme=light&amp;show_faces=false&amp;stream=true&amp;header=false&amp;height=395" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>          
+        </div>
+     </div>
+   </div>
+ </section> 
+
 <?php
-/*   if (is_page(7)) {*/
-
-     get_footer();
-
-/*   }*/
+  get_footer();
 ?>
