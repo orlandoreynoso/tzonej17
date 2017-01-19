@@ -1,176 +1,55 @@
 <?php 
-
 /* Template Name: Index   */
-
 get_header();
-
 ?>
 
 
-<section id="content">  <!--- BEGING THE PRINCIPAL SECTION OF ALL CONTENT -->
 
-    <!-- INICIA BLOCK 02 -->
-	<section id="block02">
-	<div style="clear: both"></div>
-
-    		<!-- INICIA col-2-3 -->	
-
-	    <div class="col-2-3">
-					<div class="mapeo">
-						<!-- Breadcrumb -->
-						<?php the_breadcrumb(); ?>
-						<!-- Fin Breadcrumb -->
-					</div> 
-
-    				
-
-    				<!-- INICIA contenido reflexiones -->	
-					<div class="contenido-reflexiones">
-
-
-    									
-<?php echo 'Esto es el index'; ?>
-
-
-						<div class="clearing"></div>
-
-
-
-						<!-- INICIA TODO EL CONTENIDO DEL CUADRO IZQUIERDO -->	
-
-
-
-
-
-									<?php if (have_posts()): while(have_posts()): the_post();  ?>
-
-
-
-									<article class="post resume">
-
-										<div class="post-title">
-
-											<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-											<small class="meta"><span class="label-fecha"><?php the_time(get_option('date_format')); ?></span> &bull; <span class="label-cat"> Categoría </span> <span class="icon-cat"> &raquo </span>  <?php the_category(', '); ?></small>
-
-										</div><!-- /header -->
-
-										
-										<div class="cont-all">
-											<div class="linkit"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></div>											
-											<div class="the-content"><?php the_excerpt();  ?></div>
-											<div class="continuar-read"><a href="<?php the_permalink(); ?>" class="readmore"><?php _e('Continuar leyendo &rarr;','apk'); ?></a></div>
-											
-										</div>	
-          									
-
-									</article>
-
-
-
-									
-
-									<?php endwhile; ?>
-
-
-
-
-
-											<div class="navigation"><?php if(function_exists('pagenavi')) { pagenavi(); } ?></div>									
-
-
-
-
-
-									<?php else: ?>
-
-										
-
-									
-
-
-
-									<article class="post resume">
-
-										<div class="post-title">
-
-											<h2><?php _e('No hay contenidos disponibles','apk' ) ?></h2>
-
-										</div>
-
-
-
-										<div class="post-content">
-
-											<p><?php _e('No hay contenidos que correspondan con esta pagina, por favor revizar la busqueda para encontrar lo que desea','apk' ) ?></p>
-
-											<?php get_search_form(); ?>
-
-										</div>
-
-										
-
-									</article>
-
-
-
-
-
-									<?php endif; ?>
-
-
-
-
-
-						<!-- FINALIZA TODO EL CONTENIDO DEL CUADRO IZQUIERDO -->					
-
-
-
-						
-
-					</div>
-
-					<!-- Finaliza contenido reflexiones-->	
-
-		
-
-			</div>
-
-    		<!-- FINALIZA col-2-3 -->				
-
-
-
-    		<!-- INICIA col-1-5 -->	
-
-    		<div class="col-1-5">
-
-					<!-- div class="titulo-cartelera"><h2></h2></div -->
-
-					<div class="lateral-interior">
-
-					<?php  zemanta_related_posts(7);  ?>
-
-					</div>  
-
-    		</div>
-
-    		<!-- FINALIZA col-1-5 -->				
-
-	
-
-     
-
-
-
-	<div style="clear: both"></div>
-
-	</section>
-
-</section>  <!-- ENDED THE PRINCIPAL SECTION OF THE CONTENT  -->
-
-  
-
-
+ <section class="contenido-home">
+   <div class="container">
+     <div class="row">
+         <div class="col-xs-12 col-md-8 contenido-general">
+
+        <!-- ************** CONTENIDO DESPLEGABLE PARA EL BLOG ***  -->
+
+  <article class="conten">
+      <div class="mapeo"><?php the_breadcrumb(); ?></div>
+<!-- *********************************** -->      
+ 
+      <?php if ( have_posts() ) : ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+
+     <div class="contenido">
+            <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <div class="date-cat">
+              <div class="row">
+                  <div class="col-xs-12 col-md-6 fecha"><i class="icon-date fa fa-calendar"></i><?php the_time('j F, Y'); ?></div>
+                  <div class="col-xs-12 col-md-6 descripcion_categoria"><i class="icon-file fa fa-file"></i><a class="cat"><?php the_category (' , '); ?></a></div>
+              </div>
+            </div>
+            <div class="thumb">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>              
+            </div>
+            <div class="info"><?php the_excerpt();  ?></div>
+      </div>   
+
+
+    <?php endwhile; ?>
+    <div class="navigation"><?php if(function_exists('pagenavi')) { pagenavi(); } ?></div>
+    <?php else : ?>
+    <p><?php _e('Ups!, no hay entradas.'); ?></p>
+    <?php endif; ?>
+	<!-- **************************************** -->
+  </article>
+
+        <!-- ************** FIN DEL CONTENIDO BLOG ***************  -->
+
+         </div>
+        <div class="col-xs-12 col-md-4 contenido-laterales">
+          <?php include (TEMPLATEPATH . '/libs/lateral.php'); ?>          
+        </div>
+     </div>
+   </div>
+ </section>
 
 <?php  get_footer(); ?>

@@ -427,16 +427,14 @@ input[type=number]::-webkit-outer-spin-button {
         overflow: hidden;
         max-width: 100%;
         min-width: 100%;
-        max-height: 380px;
-        min-height: 380px;
-        margin: 0px auto;
+        margin: 0px auto 10px auto;
         text-align: center;
         padding: 15px; }
         .contenido-home .container .row .contenido-laterales .facetravel iframe {
-          margin: 0px auto;
+          margin: 0px auto 10px auto;
           text-align: center;
-          max-height: 380px;
-          min-height: 380px; }
+          max-height: 395px;
+          min-height: 395px; }
         .contenido-home .container .row .contenido-laterales .facetravel .face {
           margin: 0px auto;
           text-align: center; }
@@ -510,21 +508,24 @@ input[type=number]::-webkit-outer-spin-button {
   .contenido-home .container .row .conten .contenido .title {
     font-size: 1.5em;
     font-family: "Oswald", sans-serif; }
-  .contenido-home .container .row .conten .contenido .descripcion_categoria {
-    font-family: "Oswald", sans-serif;
-    font-size: 0.9em;
-    float: right;
-    color: #28303d; }
-    .contenido-home .container .row .conten .contenido .descripcion_categoria .icon-file {
-      margin-right: 5px;
-      color: #ff5252; }
-  .contenido-home .container .row .conten .contenido .fecha {
-    font-family: "Oswald", sans-serif;
-    font-size: 0.9em;
-    color: #28303d; }
-    .contenido-home .container .row .conten .contenido .fecha .icon-date {
-      margin-right: 5px;
-      color: #e80919; }
+  .contenido-home .container .row .conten .contenido .date-cat {
+    padding: 10px; }
+    .contenido-home .container .row .conten .contenido .date-cat .fecha {
+      font-family: "Oswald", sans-serif;
+      font-size: 0.9em;
+      color: #28303d; }
+      .contenido-home .container .row .conten .contenido .date-cat .fecha .icon-date {
+        margin-right: 5px;
+        color: #e80919; }
+    .contenido-home .container .row .conten .contenido .date-cat .descripcion_categoria {
+      font-family: "Oswald", sans-serif;
+      font-size: 0.9em;
+      float: right;
+      text-align: right;
+      color: #28303d; }
+      .contenido-home .container .row .conten .contenido .date-cat .descripcion_categoria .icon-file {
+        margin-right: 5px;
+        color: #ff5252; }
   .contenido-home .container .row .conten .contenido .thumb {
     padding: 5px; }
   .contenido-home .container .row .conten .contenido .info {
@@ -686,10 +687,14 @@ footer {
   .t-header {
     height: 100%;
     overflow: hidde; }
-    .t-header .head-tzone .logo-tzone img {
-      display: block;
-      vertical-align: top;
-      margin: 0px auto; }
+    .t-header .head-tzone .logo-tzone {
+      margin: 0px auto;
+      text-align: center; }
+      .t-header .head-tzone .logo-tzone .logo {
+        display: block;
+        vertical-align: top;
+        margin: 0px auto;
+        text-align: center; }
     .t-header .head-tzone .busca-redes {
       padding: 5px;
       margin-top: 7px; }
@@ -706,6 +711,20 @@ footer {
   body {
     width: 100%;
     box-sizing: border-box; }
+
+  .services-one .coti .nf-form-layout .nf-form-content nf-fields-wrap {
+    flex-flow: column wrap; }
+    .services-one .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field {
+      width: 100%;
+      padding: 2px;
+      margin: 2px; }
+      .services-one .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field:nth-child(10) input[type="button"] {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%; }
+      .services-one .coti .nf-form-layout .nf-form-content nf-fields-wrap nf-field .nf-field-container {
+        padding: 2px;
+        margin: 2px; }
 
   .t-header {
     height: 100%;
@@ -765,5 +784,6 @@ footer {
       justify-content: space-between; }
       nav .menucin .mini .menu-cssmenu-container ul li a {
         padding: 15px; } }
+/*====== esto es para la cotizacion de boletos ===== */
 
 /*# sourceMappingURL=estilo.css.map */
