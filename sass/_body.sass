@@ -160,14 +160,38 @@
 						font-size: 1.2em
 						color: $azul
 						font-family: 'Oswald', sans-serif
-					.divpagos-contenido  
+					.divpagos-contenido 
+						overflow: hidden
 						p
 							color: $oro
-						img
-							vertical-align: top
-							margin: 0px auto
+							a
+								display: block
+								max-width: 300px
+								img
+									width: 100%
+									height: auto
+									&:hover
+										filter: alpha(opacity=50)
+										-moz-opacity: 1.0
+										opacity: 0.5
+										-khml-opacity: 1.0
+										transition: 0.5s ease
+										-o-transition: 0.5s ease
+										-webkit-transition: 0.5s ease
+										box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+										-webkit-box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+										-moz-box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
+						.wp-caption
+							padding: 5px
+							overflow: hidden
 							width: 100%
-							height: auto	
+							max-width: 300px
+							img
+								vertical-align: top
+								margin: 0px auto
+								width: 100%
+								height: 100px
+								display: block
 				.lastnews
 					background-color: $blanco
 					margin-top: 10px
