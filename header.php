@@ -6,11 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/estilo.css">
 	<!-- script type='text/javascript' src='<?php // bloginfo('stylesheet_directory'); ?>/js/analitycs.js'></script -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="<?php bloginfo('stylesheet_directory'); ?>/js/prefixfree.min.js"></script>
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon-16x16.png" sizes="16x16">
